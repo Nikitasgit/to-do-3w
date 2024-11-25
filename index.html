@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>To-do list</title>
+  </head>
+  <body>
+    <h1>To-do list</h1>
+    <section>
+      <h2>Tâches</h2>
+      <ul id="tasks-list"></ul>
+    </section>
+    <section>
+      <h2>Ajouter un tâche</h2>
+      <form id="form-add-task">
+        <textarea
+          name="task-input"
+          id="task-input"
+          row="10"
+          cols="30"
+          resize="none"
+        ></textarea>
+        <label for="priority">Priorité:</label>
+        <select name="priorities" id="priorities">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <button id="submit-btn" type="submit">Ajouter une tâche</button>
+      </form>
+      <h3>Supprimer les tâches séléctionnées</h3>
+      <button id="delete-tasks-btn">Supprimer</button>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
